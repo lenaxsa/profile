@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;1,400&display=swap');
+
+h1 {
+  font-family: 'Neucha', cursive;
+  font-size: 40px;
+  color: rgb(9, 69, 69);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Neucha', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+body {
+  background-image: url("images/moroccan-flower.png");
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+}
+
+button {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 15px;
+  background-color:rgb(255, 255, 255)
+  text-align: center;
+}
+
+a {
+  color: rgb(4, 174, 160);
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  color:rgba(21, 80, 74, 0.957)
+}
+
+.button::after {
+  content: 'Click here to see my photography portfolio 📷';
+  width: 75%;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  margin: 2px;
+  border: 2px solid rgba(184, 224, 184, 0.578);
+  transition-duration: 0.4s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover::after {
+  content: "Click here to see my photography portfolio 📸";
+  background-color:rgb(236, 236, 236);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  margin: 40px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.card-white {
+  width: 500px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-card {
+  width: 500px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+p {
+  text-align: center;
+}
+
+.img-circle {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 100%;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
